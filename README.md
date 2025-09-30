@@ -63,8 +63,25 @@ new JAlert(jNotificationPane.getNotificationRootPanel())
     .setCallBack(() -> System.out.println("Alert dismissed"))
     .show();
 </code></pre>
-
 <hr>
+<h2>🧩 Dependencies</h2>
+<ul>
+  <li><strong>FlatLaf</strong> — used for modern UI styling and border customization</li>
+</ul>
+<p>You can download the latest FlatLaf JAR from the official GitHub repository:</p>
+<p><a href="https://github.com/JFormDesigner/FlatLaf/releases" target="_blank">🔗 FlatLaf Releases</a></p>
+<p><strong style="color:#d6336c;">⚠️ Make sure to add <code>flatlaf-x.x.x.jar</code> to your project’s classpath alongside <code>jfreealerts.jar</code>.</strong></p>
+
+<pre><code>
+  // add the following in the main method of the main class of the application
+    public static void main(String args[]) {
+        FlatMacLightLaf.setup(); //to apply the theme
+        ..
+        ..
+    }
+</code></pre>
+<hr>
+
 <h2>🧪 Demo Snippet</h2>
 <pre><code>
 public class DemoFrame extends JFrame {
@@ -72,19 +89,15 @@ public class DemoFrame extends JFrame {
         initComponents();
         jNotificationPane.initRuntime(); // required
     }
-
     private void showSuccess() {
         new JAlert(jNotificationPane.getNotificationRootPanel(), JAlertType.SUCCESS, "Success message").show();
     }
-
     private void showError() {
         new JAlert(jNotificationPane.getNotificationRootPanel(), JAlertType.ERROR, "Error occurred").show();
     }
-
     private void showInfo() {
         new JAlert(jNotificationPane.getNotificationRootPanel(), JAlertType.INFO, "Information message").show();
     }
-
     private void showWarning() {
         new JAlert(jNotificationPane.getNotificationRootPanel(), JAlertType.WARNING, "Warning message").show();
     }
@@ -143,7 +156,7 @@ public class DemoFrame extends JFrame {
 <hr>
 
 <h2>🧪 Demo Project</h2>
-<p>See <a href="https://github.com/yourusername/JFreeAlerts-Demo">JFreeAlerts-Demo</a> for a working example.</p>
+<p>See <a href="https://github.com/ntsachira/j-free-alerts-demo">JFreeAlerts-Demo</a> for a working example.</p>
 
 <hr>
 
