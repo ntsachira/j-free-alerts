@@ -24,7 +24,7 @@
 
 <h2>📦 Installation</h2>
 <ol>
-  <li>Download the latest <code>jfreealerts.jar</code> from the <a href="https://github.com/yourusername/JFreeAlerts/releases">Releases</a> page</li>
+  <li>Download the latest <code>jfreealerts.jar</code> from the <a href="https://github.com/ntsachira/j-free-alerts/releases">Releases</a> page</li>
   <li>Add it to your project’s classpath (Add to libraries as a jar)</li>
 </ol>
 
